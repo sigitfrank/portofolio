@@ -1,0 +1,119 @@
+@media (max-width: 576px) {
+    .section:not(:first-child) {
+        padding: 2rem 0;
+    }
+
+    .section.profile .container {
+        padding: 0;
+    }
+
+    .section.profile {
+        margin-top: 0rem;
+    }
+
+    .content {
+        margin-top: 40px;
+    }
+
+    .navigation {
+        /* height: 30vh; */
+        position: relative;
+        height: unset;
+    }
+
+    .navigation ul.navigation-links {
+        display: block;
+        text-align: center;
+    }
+
+    .navigation li.menu {
+        display: block;
+    }
+
+    .on_hover:hover,
+    .on_hover.active {
+        background: #000;
+    }
+
+    .profile-academic {
+        padding: 1.25rem;
+        margin-top: 0;
+    }
+
+    .profile-academic h2 {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .profile-academic ul {
+        text-align: center;
+    }
+
+    .profile-wrapper .profile-detail .social-media_links{
+        display: block;
+    }
+
+    .profile-wrapper .profile-detail .social-media_links li {
+        font-size: .75rem;
+        margin: 1rem 0;
+    }
+    
+
+    .profile-wrapper .profile-academic {
+        margin-top: 0;
+    }
+
+    .project h1 {
+        flex-wrap: wrap;
+    }
+
+    .project h1 span {
+        order: 2;
+    }
+
+    .project h1 img {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .project .card .card-body .project-list .header {
+        display: block;
+    }
+
+    .project .card .card-body .project-list .header h3:last-child {
+        position: relative;
+    }
+
+    .contact .contact__wrapper ul {
+        translate: 0;
+    }
+
+    .contact__form .form-group {
+        text-align: center;
+    }
+
+    .contact__form .form-group label {
+        margin: 1rem 0;
+    }
+
+    .navigation ul.navigation-links {
+        animation: nav-init .25s forwards ease-in-out, nav-fill .25s forwards .25s ease-in-out;
+    }
+
+    .navigation ul.navigation-links li {
+        animation: nav-show .25s forwards .5s ease-in-out;
+    }
+
+    span.scroll-bottom-wrapper{
+        font-size: 25px;
+    }
+
+    .profile-wrapper .row{
+        gap: 0 1rem;
+        padding: 1rem;
+    }
+    
+.contact .contact__form{
+    width: 100%;
+}
+}

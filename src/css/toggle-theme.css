@@ -1,0 +1,10 @@
+.toggle-theme {
+    position: fixed;
+    top: calc(50% - 20vh);
+    left: 50px;
+}
+
+.toggle-theme.light svg{
+    color: yellow;
+    fill: red;
+}

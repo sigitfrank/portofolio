@@ -1,0 +1,120 @@
+html,
+body {
+    font-family: 'Poppins', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+#root {
+    background: rgba(0, 0, 0, .95);
+    color: #FFF;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+
+.section__space {
+    margin: 1.5rem;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.on_hover{
+    transition: .25s;
+    filter: blur(1px);
+}
+
+.on_hover:hover,
+.on_hover.active {
+    background-color: rgb(100, 100, 100, .25);
+    text-decoration: underline;
+    text-shadow: 0 0 1px #FFF;
+    border: 1px solid #fa710983;
+    filter: blur(0px);
+
+}
+
+.section h1 {
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .card {
+    background-color: transparent;
+    text-align: center;
+    max-width: 75%;
+    min-width: 20%;
+    padding: 1rem;
+    cursor: pointer;
+    scale: 1;
+    align-items: center;
+}
+
+.gallery .card:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.gallery .card .card-header img {
+    width: 100%;
+    height: 200px;
+}
+
+.gallery .card .card-body a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+button.primary {
+    background: rgba(0, 0, 0, 0.55);
+    color: #FFF;
+    transition: .25s;
+}
+
+button.primary:hover {
+    background: #fa7109 !important;
+}
+
+a.scroll-bottom-wrapper{
+    position: fixed;
+    z-index: 9999;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 35px;
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+    transition: .25s;
+}
+
+a.scroll-bottom-wrapper:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-wrapper a{
+    text-decoration: none !important;
+}
+
+.btn-wrapper a:hover{
+    color:#FFF;
+}
+
+.color__secondary{
+    color: #fa7109;
+}
+
+.background__secondary{
+    background: #fa7109;
+    color: #FFF;
+}
