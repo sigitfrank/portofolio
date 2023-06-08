@@ -143,7 +143,7 @@ export const projects: ProjectInterface[] = [
         label: 'AiChat Pte Ltd',
         img: '/assets/aichat.png',
         jobdesc: ['Reporting in daily scrum', 'Discuss with product team to develop new features', 'Fixing bugs', 'Collaborate with team to enhance and improve project code', 'Work with backend developer to make features run effectively'],
-        list: ['Ticketing Enhancement', 'Conversation Enhancement', 'Geo-Location', 'FB Recurring', 'Hubspot Integration', 'Email Ticketing']
+        list: ['Ticketing Enhancement', 'Conversation Enhancement', 'Geo-Location', 'FB Recurring', 'Hubspot Integration', 'Email Ticketing', 'SMS Broadcast', 'Line Channel integration']
     },
     {
         label: 'Astronacci International',
