@@ -2,14 +2,11 @@
     padding-top: 2rem;
 }
 
-.profile h1 {
+.profile .introduction h1 {
     font-size: 2rem;
     text-decoration: none;
     margin-bottom: 1rem;
-}
-
-.profile h1 span {
-    font-size: 1rem;
+    position: relative;
 }
 
 .profile a.cv {
@@ -168,7 +165,6 @@
     to {
         translate: 0 0;
         opacity: 1;
-        /* background-color: yellow; */
     }
 }
 

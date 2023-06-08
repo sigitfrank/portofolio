@@ -23,9 +23,10 @@ function Profile(): ReactElement {
             <div className="container">
                 <div className="introduction">
                     <h2 className='text-center'>Hello, I'm</h2>
-                    {/* <h1 className='section__space'>Sigit Tunggul Waskito <span>{calculateAge(birthday)}yo</span></h1> */}
-                    <h1 className='section__space'>Sigit Tunggul Waskito</h1>
-                    <h4 className='text-center text-muted'>Frontend Developer</h4>
+                    <h1 className='section__space text-center'>
+                        Sigit Tunggul Waskito
+                    </h1>
+                    <h4 className='text-center text-muted'>Web Developer &#x2022; {calculateAge(birthday)} years old</h4>
                 </div>
                 <div className="text-center mt-4">
                     <CgArrowDownO />
