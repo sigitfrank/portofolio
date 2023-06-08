@@ -42,8 +42,8 @@ function Profile(): ReactElement {
                 <div className="profile-wrapper">
                     <div className="profile-detail">
                         <div className="overlay"></div>
-                        <div className="profile-picture-wrapper" onClick={handleToggleProfile}>
-                            <img src={`/assets/${profilePicture}`} alt="profile" />
+                        <div className="profile-picture-wrapper">
+                            <img src={`/assets/${profilePicture}`} alt="profile" onClick={handleToggleProfile} />
                         </div>
                         <ul className='social-media_links'>
                             <li className='on_hover' onClick={() => handleLink('https://www.instagram.com/sigit_frank/')}>

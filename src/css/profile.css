@@ -45,13 +45,13 @@
 .profile-wrapper .profile-detail .profile-picture-wrapper {
     padding-top: 2rem;
     position: relative;
-    cursor: pointer;
 }
 
 .profile-wrapper .profile-detail img {
     border-radius: 50%;
     object-fit: cover;
     max-width: 200px;
+    cursor: pointer;
 }
 
 .profile-wrapper .profile-detail .social-media_links {
