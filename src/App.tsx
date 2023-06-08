@@ -16,7 +16,6 @@ function App() {
         <Navigation />
         <Content />
         <Footer />
-
       </div>
     </AppContext.Provider>
   );

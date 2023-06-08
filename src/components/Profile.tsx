@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { ReactElement, useState } from 'react'
 import '../css/profile.css'
 import { SiCodewars, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { MdSchool } from "react-icons/md";
@@ -8,6 +8,11 @@ import calculateAge from '../utils/calculcateAge';
 import { birthday, profileDescription } from '../namespace';
 
 function Profile(): ReactElement {
+    const [profilePicture, setProfilePicture] = useState('me-2.jpg')
+
+    const handleToggleProfile = () => {
+        setProfilePicture(prev => prev === 'me-2.jpg' ? 'me.jpg' : 'me-2.jpg')
+    }
 
     const handleLink = (url: string): void => {
         window.open(url, '_blank')
@@ -37,8 +42,8 @@ function Profile(): ReactElement {
                 <div className="profile-wrapper">
                     <div className="profile-detail">
                         <div className="overlay"></div>
-                        <div className="profile-picture-wrapper">
-                            <img src="/assets/me.jpg" alt="profile" />
+                        <div className="profile-picture-wrapper" onClick={handleToggleProfile}>
+                            <img src={`/assets/${profilePicture}`} alt="profile" />
                         </div>
                         <ul className='social-media_links'>
                             <li className='on_hover' onClick={() => handleLink('https://www.instagram.com/sigit_frank/')}>
