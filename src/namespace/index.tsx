@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiBootstrap, SiMobx, SiRedux, SiSocketdotio, SiMongodb } from "react-icons/si"
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiBootstrap, SiMobx, SiRedux, SiSocketdotio, SiMongodb, SiGraphql, SiMaterialui } from "react-icons/si"
 
 import { ExperienceInterface, LinkInterface, ProjectInterface, SkillListInterface } from "../interfaces/namespace"
 import calculateDuration from "../utils/calculateDuration"
@@ -57,6 +57,18 @@ export const skillList: SkillListInterface[] = [
 
     },
     {
+        label: 'TypeScript',
+        icon: <span> <SiTypescript className='typescript' /></span>,
+        link: 'https://www.typescriptlang.org/'
+
+    },
+    {
+        label: 'GraphQL',
+        icon: <span> <SiGraphql className='graphql' /></span>,
+        link: 'https://graphql.org/'
+
+    },
+    {
         label: 'ReactJS',
         icon: <span> <SiReact className='reactjs' /></span>,
         link: 'https://reactjs.org/'
@@ -89,6 +101,12 @@ export const skillList: SkillListInterface[] = [
     {
         label: 'Bootstrap',
         icon: <span> <SiBootstrap className='bootstrap' /></span>,
+        link: 'https://getbootstrap.com/'
+
+    },
+    {
+        label: 'Material UI',
+        icon: <span> <SiMaterialui className='mui' /></span>,
         link: 'https://getbootstrap.com/'
 
     },
