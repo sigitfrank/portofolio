@@ -10,13 +10,8 @@ import { birthday, profileDescription } from '../namespace';
 function Profile(): ReactElement {
     const [profilePicture, setProfilePicture] = useState('me-2.jpg')
 
-    const handleToggleProfile = () => {
-        setProfilePicture(prev => prev === 'me-2.jpg' ? 'me.jpg' : 'me-2.jpg')
-    }
-
-    const handleLink = (url: string): void => {
-        window.open(url, '_blank')
-    }
+    const handleToggleProfile = () => setProfilePicture(prev => prev === 'me-2.jpg' ? 'me.jpg' : 'me-2.jpg')
+    const handleLink = (url: string) => window.open(url, '_blank')
 
     return (
         <div className='section profile' id='profile'>
