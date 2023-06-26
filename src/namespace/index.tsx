@@ -177,4 +177,6 @@ export const projects: ProjectInterface[] = [
     },
 ]
 
-export const getContact = (clientRequest: string, name: string, description: string): string => `https://wa.me/082178306187?text=Hi,%20Subject:%20${clientRequest}%20Name:%20${name}%20description:%20${description}`
+export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+export const getContact = (message: string): string => `https://wa.me/082178306187?text=${message}`

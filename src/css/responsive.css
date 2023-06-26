@@ -49,7 +49,7 @@
         text-align: center;
     }
 
-    .profile-wrapper .profile-detail .social-media_links{
+    .profile-wrapper .profile-detail .social-media_links {
         display: block;
     }
 
@@ -57,7 +57,7 @@
         font-size: .75rem;
         margin: 1rem 0;
     }
-    
+
 
     .profile-wrapper .profile-academic {
         margin-top: 0;
@@ -104,16 +104,65 @@
         animation: nav-show .25s forwards .5s ease-in-out;
     }
 
-    span.scroll-bottom-wrapper{
+    span.scroll-bottom-wrapper {
         font-size: 25px;
     }
 
-    .profile-wrapper .row{
+    .profile-wrapper .row {
         gap: 0 1rem;
         padding: 1rem;
     }
-    
-.contact .contact__form{
-    width: 100%;
+
+    .contact .contact__form {
+        width: 100%;
+    }
+
+    .contact .contact__wrapper .contact__information {
+        padding: 1rem;
+    }
+
+    .contact .contact__wrapper .contact__information p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .contact .contact__wrapper .contact__information .overlay.o-2 {
+        display: none;
+    }
 }
+
+@media (max-width: 992px) {
+
+    .contact__information {
+        min-height: 700px;
+        flex: unset !important;
+        width: 100%;
+    }
+
+    .contact .contact__wrapper {
+        gap: 0;
+    }
+
+    .contact .contact__wrapper .contact__information p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .contact .contact__wrapper .contact__information .overlay {
+        background-position: bottom;
+    }
+
+    .contact .contact__wrapper .contact__information:hover .overlay.o-1 {
+        transform: unset;
+    }
+
+    .contact .contact__wrapper .contact__information .overlay.o-2 {
+        display: none;
+    }
+
+    .contact .contact__wrapper .contact__form {
+        justify-content: center;
+        padding: 1rem;
+        padding-top: 0;
+    }
 }

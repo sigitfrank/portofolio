@@ -14,3 +14,11 @@ export interface UseStoreInterface {
         setClientRequest: React.Dispatch<React.SetStateAction<string>>,
     },
 }
+
+export interface FormState {
+    firstName: string;
+    lastName: string;
+    email: string;
+    service: string;
+    message: string;
+}

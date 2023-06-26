@@ -22,7 +22,7 @@ body {
     cursor: pointer;
 }
 
-.on_hover{
+.on_hover {
     transition: .25s;
     filter: blur(1px);
 }
@@ -87,7 +87,7 @@ button.primary:hover {
     background: #fa7109 !important;
 }
 
-a.scroll-bottom-wrapper{
+a.scroll-bottom-wrapper {
     position: fixed;
     z-index: 9999;
     color: rgba(255, 255, 255, 0.75);
@@ -98,23 +98,57 @@ a.scroll-bottom-wrapper{
     transition: .25s;
 }
 
-a.scroll-bottom-wrapper:hover{
+a.scroll-bottom-wrapper:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.btn-wrapper a{
+.btn-wrapper a {
     text-decoration: none !important;
 }
 
-.btn-wrapper a:hover{
-    color:#FFF;
+.btn-wrapper a:hover {
+    color: #FFF;
 }
 
-.color__secondary{
+.color__secondary {
     color: #fa7109;
 }
 
-.background__secondary{
+.background__secondary {
     background: #fa7109;
     color: #FFF;
+}
+
+.background__secondary:hover {
+    border: 1px solid #fa7109 !important;
+}
+
+input[type=text],
+textarea {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #fa710983 !important;
+    color: #FFF !important;
+    border-radius: 0 !important;
+    resize: none;
+}
+
+input[type=text]:focus,
+textarea:focus {
+    box-shadow: unset !important;
+    color: #FFF;
+    border-color: #fa7109 !important;
+}
+
+input[type=radio] {
+    background: transparent;
+    border-color: #fa7109;
+    cursor: pointer;
+}
+
+input[type=radio]:focus,
+input[type=radio]:checked {
+    background: #fa7109;
+    border-color: #fa7109;
+    box-shadow: unset !important;
 }

@@ -4,7 +4,7 @@ import '../css/footer.css'
 function Footer(): ReactElement {
     return (
         <div className='footer'>
-            <span>{'</>'}</span>
+            <p>Venture into the world of <span>Web Programming</span>, where design, code, and imagination collide </p>
         </div>
     )
 }
