@@ -3,9 +3,10 @@ import '../css/profile.css'
 import { SiCodewars, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { MdSchool } from "react-icons/md";
 import { RiOrganizationChart } from "react-icons/ri";
-import { CgArrowDownO, CgAwards, CgSoftwareDownload } from "react-icons/cg";
+import { CgAwards, CgSoftwareDownload } from "react-icons/cg";
 import calculateAge from '../utils/calculcateAge';
 import { birthday, profileDescription } from '../namespace';
+import MouseScroll from './Icons/MouseScroll';
 
 function Profile(): ReactElement {
     const [profilePicture, setProfilePicture] = useState('me-2.jpg')
@@ -24,7 +25,7 @@ function Profile(): ReactElement {
                     <h4 className='text-center text-muted'>Web Developer &#x2022; {calculateAge(birthday)} years old</h4>
                 </div>
                 <div className="text-center mt-4">
-                    <CgArrowDownO />
+                    <MouseScroll />
                 </div>
 
                 <div className="btn-wrapper text-center my-4">

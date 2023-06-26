@@ -1,6 +1,6 @@
 import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiBootstrap, SiMobx, SiRedux, SiSocketdotio, SiMongodb, SiGraphql, SiMaterialui } from "react-icons/si"
 
-import { ExperienceInterface, LinkInterface, ProjectInterface, SkillListInterface } from "../interfaces/namespace"
+import { ExperienceInterface, LinkInterface, ProjectInterface, SkillListInterface } from "../interfaces/interfaces"
 import calculateDuration from "../utils/calculateDuration"
 
 export const links: LinkInterface[] = [
@@ -160,7 +160,7 @@ export const projects: ProjectInterface[] = [
     {
         label: 'AiChat Pte Ltd',
         img: '/assets/aichat.png',
-        jobdesc: ['Reporting in daily scrum', 'Discuss with product team to develop new features', 'Fixing bugs', 'Collaborate with team to enhance and improve project code', 'Work with backend developer to make features run effectively'],
+        jobdesc: ['Reporting in daily scrum', 'Develop new features for web and mobile app', 'Fixing bugs', 'Work with backend developer to make features run effectively', 'Maintain cms features', 'Rearchitecture components'],
         list: ['Ticketing Enhancement', 'Conversation Enhancement', 'Geo-Location', 'FB Recurring', 'Hubspot Integration', 'Email Ticketing', 'SMS Broadcast', 'Line Channel integration']
     },
     {
@@ -180,3 +180,15 @@ export const projects: ProjectInterface[] = [
 export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const getContact = (message: string): string => `https://wa.me/082178306187?text=${message}`
+
+export const reactTiltOptions = {
+    reverse: false,  // reverse the tilt direction
+    max: 35,     // max tilt rotation (degrees)
+    perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 1.1,    // 2 = 200%, 1.5 = 150%, etc..
+    speed: 1000,   // Speed of the enter/exit transition
+    transition: true,   // Set a transition on enter/exit.
+    axis: null,   // What axis should be disabled. Can be X or Y.
+    reset: true,    // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}

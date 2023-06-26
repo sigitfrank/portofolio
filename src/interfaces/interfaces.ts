@@ -1,5 +1,3 @@
-import { ReactHTMLElement } from "react";
-
 export interface LinkInterface {
     prev?: string;
     label: string;
@@ -7,10 +5,9 @@ export interface LinkInterface {
     next?: string;
 }
 
-// TODO Change type icon
 export interface SkillListInterface {
     label: string;
-    icon: any;
+    icon: React.ReactNode;
     link: string;
 }
 

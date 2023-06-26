@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LinkInterface, ProjectInterface } from '../interfaces/namespace';
+import { LinkInterface, ProjectInterface } from '../interfaces/interfaces';
 import { UseStoreInterface } from '../interfaces/useStore';
 import { links, projects } from '../namespace';
 

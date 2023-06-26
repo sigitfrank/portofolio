@@ -1,4 +1,4 @@
-import { LinkInterface, ProjectInterface } from "./namespace";
+import { LinkInterface, ProjectInterface } from "./interfaces";
 
 export interface UseStoreInterface {
     pageLink: {

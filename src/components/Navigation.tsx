@@ -3,7 +3,7 @@ import { AppContext } from '../context/AppContext'
 import '../css/navigation.css'
 import { links } from '../namespace'
 import { TiThMenuOutline } from 'react-icons/ti'
-import { LinkInterface } from '../interfaces/namespace'
+import { LinkInterface } from '../interfaces/interfaces'
 
 function Navigation(): ReactElement {
     const [isExpand, setIsExpand] = useState<boolean>(false)
