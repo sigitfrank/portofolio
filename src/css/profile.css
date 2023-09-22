@@ -30,6 +30,15 @@
     background: #fa710983;
 }
 
+.profile .btn-wrapper {
+    position: relative;
+    left: -10px;
+}
+
+.profile .btn-wrapper a {
+    font-size: 14px;
+}
+
 .profile a.cv,
 .profile a.portofolio {
     text-align: center;

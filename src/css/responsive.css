@@ -1,4 +1,5 @@
 @media (max-width: 576px) {
+
     .section:not(:first-child) {
         padding: 2rem 0;
     }
@@ -9,6 +10,16 @@
 
     .section.profile {
         margin-top: 0rem;
+    }
+
+    .section.profile .btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        left: unset;
+    }
+
+    .section.profile .btn-wrapper button:first-child {
+        order: 1;
     }
 
     .content {
