@@ -3,12 +3,13 @@ import '../css/profile.css'
 import { SiCodewars, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { MdSchool } from "react-icons/md";
 import { RiOrganizationChart } from "react-icons/ri";
-import { CgAwards, CgFileDocument, CgSoftwareDownload } from "react-icons/cg";
+import { CgAwards, CgFileDocument } from "react-icons/cg";
 import calculateAge from '../utils/calculcateAge';
 import { birthday, profileDescription } from '../namespace';
 import MouseScroll from './Icons/MouseScroll';
 import { PropsGetterArgs, usePopperTooltip } from 'react-popper-tooltip';
 import 'react-popper-tooltip/dist/styles.css';
+import { BsFillFileEarmarkCodeFill } from 'react-icons/bs';
 
 type PortofolioTooltipProps = {
     visible: boolean
@@ -78,13 +79,19 @@ function Profile(): ReactElement {
 
                 <div className="btn-wrapper text-center my-4">
                     <button className='btn'>
-                        <a href='/assets/Sigit-CV.pdf' download target='_blank' rel='noopener noreferrer' className='cv'> <CgSoftwareDownload /> Download CV</a>
+                        <a href='/assets/Sigit-CV.pdf' download target='_blank' rel='noopener noreferrer' className='cv'>
+                            <CgFileDocument className='file-icon' />
+                            Curriculum vitae
+                        </a>
                     </button>
                     <button className='btn mx-3'>
                         <a href="#contact" className='color__secondary'>Let's Talk</a>
                     </button>
                     <button className='btn' ref={setTriggerRef}>
-                        <a className='portofolio'><CgFileDocument /> Portofolio File</a>
+                        <a className='portofolio'>
+                            <BsFillFileEarmarkCodeFill className='file-icon' />
+                            Portofolio File
+                        </a>
                         <PortofolioTooltip
                             visible={visible}
                             getTooltipProps={getTooltipProps}
