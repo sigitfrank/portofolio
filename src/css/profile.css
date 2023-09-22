@@ -9,7 +9,23 @@
     position: relative;
 }
 
-.profile a.cv {
+.tooltip-container {
+    pointer-events: all !important;
+    cursor: pointer;
+}
+
+.tooltip-container a {
+    padding: .5rem;
+    transition: .25s;
+    color: #000;
+}
+
+.tooltip-container a:hover {
+    background: #fa710983;
+}
+
+.profile a.cv,
+.profile a.portofolio {
     text-align: center;
     display: inline-block;
     width: 100%;

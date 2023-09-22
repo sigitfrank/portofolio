@@ -3,12 +3,60 @@ import '../css/profile.css'
 import { SiCodewars, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { MdSchool } from "react-icons/md";
 import { RiOrganizationChart } from "react-icons/ri";
-import { CgAwards, CgSoftwareDownload } from "react-icons/cg";
+import { CgAwards, CgFileDocument, CgSoftwareDownload } from "react-icons/cg";
 import calculateAge from '../utils/calculcateAge';
 import { birthday, profileDescription } from '../namespace';
 import MouseScroll from './Icons/MouseScroll';
+import { PropsGetterArgs, usePopperTooltip } from 'react-popper-tooltip';
+import 'react-popper-tooltip/dist/styles.css';
+
+type PortofolioTooltipProps = {
+    visible: boolean
+    getTooltipProps: (args?: PropsGetterArgs | undefined) => {
+        'data-popper-interactive': boolean | undefined;
+        style: React.CSSProperties;
+    }
+    setTooltipRef: React.Dispatch<React.SetStateAction<HTMLElement | null>>
+    getArrowProps: (args?: PropsGetterArgs | undefined) => {
+        style: React.CSSProperties;
+        'data-popper-arrow': boolean;
+    }
+}
+
+const PortofolioTooltip = ({
+    visible,
+    getTooltipProps,
+    setTooltipRef,
+    getArrowProps,
+}: PortofolioTooltipProps) => {
+    return visible ? (
+        <div
+            ref={setTooltipRef}
+            {...getTooltipProps({ className: 'tooltip-container' })}
+        >
+            <a href='/assets/sigit-portofolio.pdf' download target='_blank' rel='noopener noreferrer'>as .PDF</a>
+            <a href='/assets/sigit-portofolio.pptx' download target='_blank' rel='noopener noreferrer'>as .PPT</a>
+            <div {...getArrowProps({ className: 'tooltip-arrow' })} />
+        </div>
+    ) : null
+}
 
 function Profile(): ReactElement {
+    const [controlledVisible, setControlledVisible] = useState(false);
+
+    const {
+        getArrowProps,
+        getTooltipProps,
+        setTooltipRef,
+        setTriggerRef,
+        visible,
+    } = usePopperTooltip({
+        trigger: 'click',
+        closeOnOutsideClick: true,
+        visible: controlledVisible,
+        onVisibleChange: setControlledVisible,
+    });
+
     const [profilePicture, setProfilePicture] = useState('me-2.jpg')
 
     const handleToggleProfile = () => setProfilePicture(prev => prev === 'me-2.jpg' ? 'me.jpg' : 'me-2.jpg')
@@ -29,11 +77,20 @@ function Profile(): ReactElement {
                 </div>
 
                 <div className="btn-wrapper text-center my-4">
-                    <button className='btn background__secondary'>
+                    <button className='btn'>
                         <a href='/assets/Sigit-CV.pdf' download target='_blank' rel='noopener noreferrer' className='cv'> <CgSoftwareDownload /> Download CV</a>
                     </button>
                     <button className='btn mx-3'>
                         <a href="#contact" className='color__secondary'>Let's Talk</a>
+                    </button>
+                    <button className='btn' ref={setTriggerRef}>
+                        <a className='portofolio'><CgFileDocument /> Portofolio File</a>
+                        <PortofolioTooltip
+                            visible={visible}
+                            getTooltipProps={getTooltipProps}
+                            setTooltipRef={setTooltipRef}
+                            getArrowProps={getArrowProps}
+                        />
                     </button>
                 </div>
                 <div className="profile-wrapper">
