@@ -44,7 +44,7 @@ const formValidation = (form: FormState) => {
 }
 
 function Contact(): ReactElement {
-  const { showToast, removeToast } = useLocalToast();
+  const { showToast } = useLocalToast();
   const { clientRequest } = useContext(AppContext)
   const { getClientRequest, setClientRequest } = clientRequest
   const [form, setForm] = useState<FormState>(

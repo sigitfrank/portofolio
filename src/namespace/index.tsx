@@ -179,7 +179,9 @@ export const projects: ProjectInterface[] = [
 
 export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export const getContact = (message: string): string => `https://wa.me/082178306187?text=${message}`
+export const phoneNumber = '082185619646'
+
+export const getContact = (message: string): string => `https://wa.me/${phoneNumber}?text=${message}`
 
 export const reactTiltOptions = {
     reverse: false,  // reverse the tilt direction
