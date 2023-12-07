@@ -62,6 +62,10 @@ function Contact(): ReactElement {
   }
 
   const handleSendRequest = () => {
+    return showToast('btn', 'Currently not available', {
+      type: 'error',
+      duration: 2000
+    })
     const { isValid, errorMsg } = formValidation(form)
     if (!isValid) {
       return showToast('btn', errorMsg, {

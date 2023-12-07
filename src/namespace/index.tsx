@@ -179,7 +179,7 @@ export const projects: ProjectInterface[] = [
 
 export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export const phoneNumber = '082185619646'
+export const phoneNumber = '-'
 
 export const getContact = (message: string): string => `https://wa.me/${phoneNumber}?text=${message}`
 
