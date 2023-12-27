@@ -1,6 +1,6 @@
 import { ReactElement, useState } from 'react'
 import '../css/profile.css'
-import { SiCodewars, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
+import { SiCodewars, SiLinkedin, SiInstagram, SiGithub, SiGmail } from "react-icons/si";
 import { MdSchool } from "react-icons/md";
 import { RiOrganizationChart } from "react-icons/ri";
 import { CgAwards, CgFileDocument } from "react-icons/cg";
@@ -61,7 +61,7 @@ function Profile(): ReactElement {
     const [profilePicture, setProfilePicture] = useState('me-2.jpg')
 
     const handleToggleProfile = () => setProfilePicture(prev => prev === 'me-2.jpg' ? 'me.jpg' : 'me-2.jpg')
-    const handleLink = (url: string) => window.open(url, '_blank')
+    const handleLink = (url: string, target: string = '_blank') => window.open(url, target)
 
     return (
         <div className='section profile' id='profile'>
@@ -107,6 +107,10 @@ function Profile(): ReactElement {
                             <img src={`/assets/${profilePicture}`} alt="profile" onClick={handleToggleProfile} />
                         </div>
                         <ul className='social-media_links'>
+                            <li className='on_hover' onClick={() => handleLink('mailto:sigitt53@gmail.com?subject=Hi, Sigit', '_self')}>
+                                <SiGmail style={{ marginBottom: '.25rem' }} />
+                                <span>Email</span>
+                            </li>
                             <li className='on_hover' onClick={() => handleLink('https://www.instagram.com/sigit_frank/')}>
                                 <SiInstagram style={{ marginBottom: '.25rem' }} />
                                 <span>Instagram</span>
