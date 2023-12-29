@@ -79,7 +79,7 @@ function Profile(): ReactElement {
 
                 <div className="btn-wrapper text-center my-4">
                     <button className='btn'>
-                        <a href='/assets/Sigit-CV.pdf' download target='_blank' rel='noopener noreferrer' className='cv'>
+                        <a href='/assets/Sigit-Tunggul-Waskito-CV.pdf' download target='_blank' rel='noopener noreferrer' className='cv'>
                             <CgFileDocument className='file-icon' />
                             Curriculum vitae
                         </a>
