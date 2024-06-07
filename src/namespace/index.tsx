@@ -36,7 +36,8 @@ export const links: LinkInterface[] = [
 
 export const birthday: Date = new Date('1998-07-23')
 
-export const profileDescription: string = `A passionate web developer especially in front end side. Love to collaborate with people and work as a team. Eager to learn and teach others. Giving full spirit to every projects that I've worked for.`
+export const profileDescription: string = `🚀 Dynamic Front-End Web Developer with a passion for crafting pixel-perfect, user-friendly interfaces. I thrive in collaborative environments and love to learn and share knowledge with
+my team. My dedication to each project is unwavering, fueling my drive to deliver high-quality results. Check out my website to see how more details here. Let us create something amazing together!`
 
 export const skillList: SkillListInterface[] = [
     {
