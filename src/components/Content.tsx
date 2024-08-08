@@ -13,7 +13,7 @@ function Content(): ReactElement {
       <Skill />
       <Experience />
       <Project />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   )
 }

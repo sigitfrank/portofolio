@@ -1,0 +1,17 @@
+.sidebar--toggle__wrapper {
+    padding-top: 25px;
+    padding-right: 28px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.sidebar--welcome__wrapper p.text {
+    margin-top: 20px;
+    font-size: 12px;
+    padding-inline: 25px;
+}
+
+.sidebar--welcome__wrapper p.text.collapsed {
+    font-size: 18px;
+    text-align: center;
+}

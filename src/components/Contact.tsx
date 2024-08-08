@@ -79,15 +79,11 @@ function Contact(): ReactElement {
   }
 
   return (<>
-    <svg style={{ rotate: '180deg' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0, 0, 0, 0.55)" fillOpacity="1" d="M0,256L60,218.7C120,181,240,107,360,85.3C480,64,600,96,720,128C840,160,960,192,1080,181.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    <svg style={{ rotate: '180deg' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="rgba(0, 0, 0, 0.55)" fillOpacity="1" d="M0,256L60,218.7C120,181,240,107,360,85.3C480,64,600,96,720,128C840,160,960,192,1080,181.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     <div className='section contact' style={{ translate: '0 -5vh' }}>
       <div className="container-lg">
-        <h1>Contact Me</h1>
+        <h1 className='fw-bold'>Contact Me</h1>
         <div className="contact__wrapper">
-          <div className="contact__information" id='contact'>
-            <div className="overlay o-1"></div>
-            <div className="overlay o-2"></div>
-          </div>
           <div className="contact__form">
             <div className="form-group d-flex justify-content-between">
               <div className="column my-3">

@@ -12,11 +12,14 @@
     align-items: center;
 }
 
-.project img {
-    width: 40px;
-    height: 40px;
+.project .company-logo {
+    text-align: center;
+}
+
+.project .company-logo img {
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-    margin-left: .5rem;
 }
 
 
@@ -47,17 +50,17 @@
     margin-bottom: 1rem;
 }
 
-.project .card .card-body .project-list{
+.project .card .card-body .project-list {
     width: 100%;
 }
 
-.project .card .card-body .project-list .header{
+.project .card .card-body .project-list .header {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.project .card .card-body .project-list .header h3:last-child{
+.project .card .card-body .project-list .header h3:last-child {
     position: absolute;
     right: 0;
 }
@@ -71,6 +74,6 @@
     translate: 0 -1px;
 }
 
-.project .card h3{
+.project .card h3 {
     margin-bottom: 1.25rem;
 }
