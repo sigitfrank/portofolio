@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiBootstrap, SiMobx, SiRedux, SiSocketdotio, SiMongodb, SiGraphql, SiMaterialdesign } from "react-icons/si"
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiBootstrap, SiMobx, SiRedux, SiSocketdotio, SiMongodb, SiGraphql, SiMaterialdesign, SiLaravel } from "react-icons/si"
 
 import { ExperienceInterface, LinkInterface, ProjectInterface, SkillListInterface } from "../interfaces/interfaces"
 import calculateDuration from "../utils/calculateDuration"
@@ -73,6 +73,11 @@ export const skillList: SkillListInterface[] = [
         label: 'ReactJS',
         icon: <span> <SiReact className='reactjs' /></span>,
         link: 'https://reactjs.org/'
+    },
+    {
+        label: 'ReactNative',
+        icon: <span> <SiReact className='reactnative' /></span>,
+        link: 'https://reactnative.dev/'
 
     },
     {
@@ -85,7 +90,11 @@ export const skillList: SkillListInterface[] = [
         label: 'ExpressJS',
         icon: <span> <SiExpress className='expressjs' /></span>,
         link: 'https://expressjs.com/'
-
+    },
+    {
+        label: 'Laravel',
+        icon: <span> <SiLaravel className='laravel' /></span>,
+        link: 'https://laravel.com/'
     },
     {
         label: 'MySQL',
