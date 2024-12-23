@@ -4,6 +4,7 @@ import { SiCodewars, SiLinkedin, SiInstagram, SiGithub, SiGmail } from "react-ic
 import { MdSchool } from "react-icons/md";
 import { RiOrganizationChart } from "react-icons/ri";
 import { CgAwards, CgFileDocument } from "react-icons/cg";
+import { PiCertificate } from "react-icons/pi";
 import calculateAge from '../utils/calculcateAge';
 import { birthday, profileDescription } from '../namespace';
 import MouseScroll from './Icons/MouseScroll';
@@ -84,8 +85,11 @@ function Profile(): ReactElement {
                             Curriculum vitae
                         </a>
                     </button>
-                    <button className='btn mx-3'>
-                        <a href="#contact" className='color__secondary'>Let's Talk</a>
+                    <button className='btn mx-2'>
+                        <a href="/assets/Sigit-Tunggul-Aichat-Certificate-of-Achievement-2024.pdf" download target='_blank' rel='noopener noreferrer' className='color__secondary certificate'>
+                            <PiCertificate className='file-icon' />
+                            AiChat Certificate
+                        </a>
                     </button>
                     <button className='btn' ref={setTriggerRef}>
                         <a className='portofolio'>

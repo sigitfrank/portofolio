@@ -40,13 +40,18 @@
 }
 
 .profile a.cv,
-.profile a.portofolio {
+.profile a.portofolio,
+.profile a.certificate {
     text-align: center;
     display: inline-block;
     width: 100%;
-    color: #FFF;
     font-weight: bold;
     cursor: pointer;
+}
+
+.profile a.cv,
+.profile a.portofolio {
+    color: #FFF;
 }
 
 .profile-wrapper {
