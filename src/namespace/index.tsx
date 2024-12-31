@@ -170,19 +170,19 @@ export const projects: ProjectInterface[] = [
     {
         label: 'AiChat Pte Ltd',
         img: '/assets/aichat.png',
-        jobdesc: ['Reporting in daily scrum', 'Develop new features for web and mobile app', 'Fixing bugs', 'Work with backend developer to make features run effectively', 'Maintain cms features', 'Rearchitecture components'],
+        jobdesc: ['Actively report progress and blockers during daily scrum meetings', 'Deliver features successfully, meeting deadlines consistently', 'Resolve critical and hard-to-replicate issues in web widgets with precision', 'Collaborate with product managers and backend developers to create innovative solutions', 'Honored as the “Outstanding Proactivity and Initiative Developer of the Year 2024” by the company', 'Successfully developed the AIChat 2.0 application within a 3-week session in Malaysia'],
         list: ['Ticketing Enhancement', 'Conversation Enhancement', 'Geo-Location', 'FB Recurring', 'Hubspot Integration', 'Email Ticketing', 'SMS Broadcast', 'Line Channel integration']
     },
     {
         label: 'Astronacci International',
         img: '/assets/astronacci.png',
-        jobdesc: ['Develop web apps for company needs', 'Develop landing page for ads', 'Provide client database for other division', 'Create scalable code and reusable components', 'Assist team in fixing bugs', 'Discuss and collaborate with team to give proper business solution using technology'],
+        jobdesc: ['Develop web applications tailored to the company`s needs', 'Design and implement landing pages for advertising campaigns', 'Provide a client database to support other divisions', 'Write scalable code and create reusable components to enhance development efficiency', 'Assist the team in identifying and resolving bugs', 'Achieved a promotion to a higher role in the company hierarchy within 1.5 years'],
         list: ['Risk & Management Calculator', 'Forexflix', 'Ashop V2', 'Fun Quiz', 'Aclub Database Management', 'The Tradepreneur', 'Landing Page “Sucor”', 'Landing Page “Price Action”', 'Landing Page “Belajar Fibonacci”', 'A-Club Super Web App']
     },
     {
         label: 'TuvNord',
         img: '/assets/tuvnord.png',
-        jobdesc: ['Develop dashboard UI using React', 'Follow redux pattern from previous developer', 'Assist team in fixing bugs', 'Work with backend developer to make data flow be served properly'],
+        jobdesc: ['Developed dashboard UI using React to enhance user experience', 'Maintained and followed the Redux pattern established by previous developers', 'Assisted the team in debugging and resolving issues effectively', 'Collaborated with backend developers to ensure seamless data flow and proper API integration'],
         list: ['Simcal Dashboard']
     },
 ]
