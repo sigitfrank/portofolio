@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   build: {
-    outDir: '../sigitfrank.github.io'
+    outDir: '../sigitfrank.github.io',
   }
 })
