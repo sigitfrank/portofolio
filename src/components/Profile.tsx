@@ -104,6 +104,9 @@ function Profile(): ReactElement {
                         />
                     </button>
                 </div>
+                <a href='https://xx-ai.vercel.app' download target='_blank' rel='noopener noreferrer' className='site'>
+                    🚀 Web Portofolio
+                </a>
                 <div className="profile-wrapper">
                     <div className="profile-detail">
                         <div className="overlay"></div>
@@ -135,12 +138,12 @@ function Profile(): ReactElement {
                     </div>
 
                     <div className="row mx-0 justify-content-center">
-                        <div className="col-lg-5">
+                        <div className="col-lg-5 scroll-animate">
                             <div className="profile-description section__space rotate">
                                 {profileDescription}
                             </div>
                         </div>
-                        <div className="col-lg-5">
+                        <div className="col-lg-5 scroll-animate">
                             <div className="profile-description text-center section__space">
                                 <h2><CgAwards className='awards' /> Awards</h2>
                                 <ul>
@@ -149,7 +152,7 @@ function Profile(): ReactElement {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-5">
+                        <div className="col-lg-5 scroll-animate">
                             <div className="profile-description text-center section__space">
                                 <h2><RiOrganizationChart className='organization' /> Organizations</h2>
                                 <ul>
@@ -158,7 +161,7 @@ function Profile(): ReactElement {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-5">
+                        <div className="col-lg-5 scroll-animate">
                             <div className="profile-description text-center section__space">
                                 <h2><MdSchool className='university' /> Education</h2>
                                 <ul>

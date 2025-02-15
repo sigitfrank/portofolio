@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import '../css/content.css'
 import Profile from './Profile'
 import Skill from './Skill'

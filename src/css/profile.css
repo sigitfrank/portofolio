@@ -41,6 +41,7 @@
 
 .profile a.cv,
 .profile a.portofolio,
+.profile a.site,
 .profile a.certificate {
     text-align: center;
     display: inline-block;
@@ -50,8 +51,10 @@
 }
 
 .profile a.cv,
+.profile a.site,
 .profile a.portofolio {
     color: #FFF;
+    text-decoration: none;
 }
 
 .profile-wrapper {
