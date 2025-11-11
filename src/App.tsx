@@ -1,24 +1,24 @@
-import './css/reset.css'
-import './css/app.css'
-import Footer from "./components/Footer";
-import Content from './components/Content';
-import { AppContext, useStore } from './context/AppContext';
-import { LocalToastProvider } from 'react-local-toast';
-import "./css/responsive.css";
-import Sidebar from './components/Sidebar';
+import { lazy, Suspense } from 'react';
+
+// Lazy load the components so their CSS is only loaded when they're rendered
+const NormalMode = lazy(() => import('./components/mode/normal-mode'));
+const DevMode = lazy(() => import('./components/mode/dev-mode'));
+const SwitchMode = lazy(() => import('./components/mode/switch-mode'));
 
 function App() {
-  const store = useStore()
-  return (
-    <LocalToastProvider>
-      <AppContext.Provider value={store}>
-        <div className="app">
-          <Sidebar />
-          <Content />
-          <Footer />
-        </div>
-      </AppContext.Provider>
-    </LocalToastProvider>
+  const search = new URLSearchParams(window.location.search);
+  const isDevMode = search.get('mode') === 'dev';
+  return (<>
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gray-900">
+        <div className="text-white text-xl">Loading...</div>
+      </div>
+    }>
+      {isDevMode ? <DevMode /> : <NormalMode />}
+      <SwitchMode />
+    </Suspense>
+
+  </>
   );
 }
 
