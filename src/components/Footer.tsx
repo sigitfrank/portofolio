@@ -1,11 +1,13 @@
 import { ReactElement } from 'react'
-import '../css/footer.css'
+import { fullName } from '../namespace'
 
 function Footer(): ReactElement {
     return (
-        <div className='footer'>
-            <p>Venture into the world of <span>Web Programming</span>, where design, code, and imagination collide </p>
-        </div>
+        <footer className="wrap footer">
+            <span>© {new Date().getFullYear()} {fullName}</span>
+            <span>Built with React, TypeScript & Vite</span>
+            <a href="#intro">Back to top ↑</a>
+        </footer>
     )
 }
 

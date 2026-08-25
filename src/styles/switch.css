@@ -1,0 +1,116 @@
+@import './tokens.css';
+
+.modeswitch {
+    position: fixed;
+    right: clamp(1rem, 3vw, 2rem);
+    bottom: clamp(1rem, 3vw, 2rem);
+    z-index: 950;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.modeswitch__hint {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--slate);
+    opacity: 0;
+    transform: translateX(8px);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+
+.modeswitch:hover .modeswitch__hint {
+    opacity: 1;
+    transform: none;
+}
+
+.modeswitch__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.7rem;
+    background: var(--ink-raised);
+    border: var(--rule) solid var(--bone-dim);
+    box-shadow: 5px 5px 0 var(--oxblood);
+    transition: transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+
+.modeswitch__btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0 var(--oxblood);
+}
+
+.modeswitch__btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--oxblood);
+}
+
+.modeswitch__slot {
+    position: relative;
+    width: 42px;
+    height: 22px;
+    background: var(--ink);
+    border: var(--rule) solid var(--ink-line);
+}
+
+.modeswitch__knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    background: var(--brass);
+    transition: transform var(--dur) var(--ease);
+}
+
+.modeswitch__slot.is-dev .modeswitch__knob {
+    transform: translateX(20px);
+    background: var(--bone);
+}
+
+.modeswitch__label {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: var(--bone);
+}
+
+@media (max-width: 760px) {
+    /* sits just above the bottom index bar, kept small so it covers
+       as little of the content behind it as possible */
+    .modeswitch {
+        right: 0.75rem;
+        bottom: 78px;
+    }
+
+    .modeswitch__hint {
+        display: none;
+    }
+
+    .modeswitch__btn {
+        gap: 0.45rem;
+        padding: 0.4rem 0.55rem;
+        box-shadow: 4px 4px 0 var(--oxblood);
+    }
+
+    .modeswitch__slot {
+        width: 34px;
+        height: 18px;
+    }
+
+    .modeswitch__knob {
+        width: 11px;
+        height: 11px;
+    }
+
+    .modeswitch__slot.is-dev .modeswitch__knob {
+        transform: translateX(16px);
+    }
+
+    .modeswitch__label {
+        font-size: 0.62rem;
+    }
+}
